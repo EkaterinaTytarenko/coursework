@@ -1,0 +1,795 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="de778495-a95a-47bf-b241-f6e03432d5dd" name="Default Changelist" comment="initial commit">
+      <change afterPath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/coursework.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/googlemaps.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/spring-ws.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/MvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/assets/ListCreator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/assets/PdfCreator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/assets/WeatherParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/DetailsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/FirstPageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/ListController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/PlacesSearchController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/RegistrationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/UserListsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entities/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entities/CategoryList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entities/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entities/ItemInList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entities/ItemSubcategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entities/ItemSubcategoryKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entities/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entities/Subcategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entities/TripsList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entities/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entities/Weather.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repos/CategoryListRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repos/ItemListRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repos/ItemRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repos/ItemSubcategoryRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repos/ListRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repos/SubCategoryRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repos/UserRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repos/WeatherRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/services/AuthProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/services/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/services/CustomUserInfoTokenServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/services/ItemService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/services/ListService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/services/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/keystore.p12" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/listStyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/util.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/Linearicons-Free-v1.0.0/icon-font.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/font-awesome-4.7.0/HELP-US-OUT.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/font-awesome-4.7.0/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/font-awesome-4.7.0/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/font-awesome-4.7.0/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/font-awesome-4.7.0/less/animated.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/font-awesome-4.7.0/less/bordered-pulled.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/font-awesome-4.7.0/less/core.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/font-awesome-4.7.0/less/fixed-width.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/font-awesome-4.7.0/less/font-awesome.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/font-awesome-4.7.0/less/icons.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/font-awesome-4.7.0/less/larger.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/font-awesome-4.7.0/less/list.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/font-awesome-4.7.0/less/mixins.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/font-awesome-4.7.0/less/path.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/font-awesome-4.7.0/less/rotated-flipped.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/font-awesome-4.7.0/less/screen-reader.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/font-awesome-4.7.0/less/stacked.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/font-awesome-4.7.0/less/variables.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/font-awesome-4.7.0/scss/_animated.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/font-awesome-4.7.0/scss/_bordered-pulled.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/font-awesome-4.7.0/scss/_core.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/font-awesome-4.7.0/scss/_fixed-width.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/font-awesome-4.7.0/scss/_icons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/font-awesome-4.7.0/scss/_larger.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/font-awesome-4.7.0/scss/_list.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/font-awesome-4.7.0/scss/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/font-awesome-4.7.0/scss/_path.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/font-awesome-4.7.0/scss/_rotated-flipped.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/font-awesome-4.7.0/scss/_screen-reader.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/font-awesome-4.7.0/scss/_stacked.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/font-awesome-4.7.0/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/font-awesome-4.7.0/scss/font-awesome.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/montserrat/Montserrat-Black.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/montserrat/Montserrat-BlackItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/montserrat/Montserrat-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/montserrat/Montserrat-BoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/montserrat/Montserrat-ExtraBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/montserrat/Montserrat-ExtraBoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/montserrat/Montserrat-ExtraLight.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/montserrat/Montserrat-ExtraLightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/montserrat/Montserrat-Italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/montserrat/Montserrat-Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/montserrat/Montserrat-LightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/montserrat/Montserrat-Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/montserrat/Montserrat-MediumItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/montserrat/Montserrat-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/montserrat/Montserrat-SemiBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/montserrat/Montserrat-SemiBoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/montserrat/Montserrat-Thin.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/montserrat/Montserrat-ThinItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/montserrat/OFL.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/poppins/Poppins-Black.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/poppins/Poppins-BlackItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/poppins/Poppins-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/poppins/Poppins-BoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/poppins/Poppins-ExtraBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/poppins/Poppins-ExtraBoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/poppins/Poppins-ExtraLight.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/poppins/Poppins-ExtraLightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/poppins/Poppins-Italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/poppins/Poppins-Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/poppins/Poppins-LightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/poppins/Poppins-Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/poppins/Poppins-MediumItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/poppins/Poppins-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/poppins/Poppins-SemiBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/poppins/Poppins-SemiBoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/poppins/Poppins-Thin.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/poppins/Poppins-ThinItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/icons/airplane.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/icons/baggage.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/icons/tick.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/map-background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/map.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/plane-big.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/plane.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/travelling.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/cities.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/listScripts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/animate/animate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/animsition/css/animsition.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/animsition/css/animsition.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/animsition/js/animsition.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/animsition/js/animsition.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/js/popper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/js/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/js/tooltip.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/countdowntime/countdowntime.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/css-hamburgers/hamburgers.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/css-hamburgers/hamburgers.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/daterangepicker/daterangepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/daterangepicker/daterangepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/daterangepicker/moment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/daterangepicker/moment.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/jquery/jquery-3.2.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/perfect-scrollbar/perfect-scrollbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/perfect-scrollbar/perfect-scrollbar.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/select2/select2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/select2/select2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/select2/select2.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/select2/select2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/details.mustache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/hello.mustache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/list.mustache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/registration.mustache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/userLists.mustache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/app/Application.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/app/MvcConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/app/WebSecurityConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/assets/ListCreator$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/assets/ListCreator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/assets/PdfCreator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/assets/WeatherParser.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/controllers/DetailsController$IndexedTripsList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/controllers/DetailsController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/controllers/FirstPageController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/controllers/ListController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/controllers/PlacesSearchController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/controllers/RegistrationController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/controllers/UserListsController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/entities/Category.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/entities/CategoryList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/entities/Item.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/entities/ItemInList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/entities/ItemSubcategory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/entities/ItemSubcategoryKey.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/entities/Role.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/entities/Subcategory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/entities/TripsList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/entities/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/entities/Weather.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/keystore.p12" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/repos/CategoryListRepo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/repos/ItemListRepo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/repos/ItemRepo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/repos/ItemSubcategoryRepo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/repos/ListRepo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/repos/SubCategoryRepo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/repos/UserRepo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/repos/WeatherRepo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/services/AuthProvider.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/services/CategoryService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/services/CustomUserInfoTokenServices.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/services/ItemService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/services/ListService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/services/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/listStyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/util.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/Linearicons-Free-v1.0.0/icon-font.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/HELP-US-OUT.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/less/animated.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/less/bordered-pulled.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/less/core.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/less/fixed-width.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/less/font-awesome.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/less/icons.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/less/larger.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/less/list.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/less/mixins.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/less/path.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/less/rotated-flipped.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/less/screen-reader.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/less/stacked.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/less/variables.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/scss/_animated.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/scss/_bordered-pulled.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/scss/_core.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/scss/_fixed-width.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/scss/_icons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/scss/_larger.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/scss/_list.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/scss/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/scss/_path.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/scss/_rotated-flipped.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/scss/_screen-reader.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/scss/_stacked.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/scss/font-awesome.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/montserrat/Montserrat-Black.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/montserrat/Montserrat-BlackItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/montserrat/Montserrat-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/montserrat/Montserrat-BoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/montserrat/Montserrat-ExtraBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/montserrat/Montserrat-ExtraBoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/montserrat/Montserrat-ExtraLight.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/montserrat/Montserrat-ExtraLightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/montserrat/Montserrat-Italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/montserrat/Montserrat-Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/montserrat/Montserrat-LightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/montserrat/Montserrat-Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/montserrat/Montserrat-MediumItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/montserrat/Montserrat-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/montserrat/Montserrat-SemiBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/montserrat/Montserrat-SemiBoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/montserrat/Montserrat-Thin.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/montserrat/Montserrat-ThinItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/montserrat/OFL.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Black.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-BlackItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-BoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-ExtraBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-ExtraBoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-ExtraLight.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-ExtraLightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-LightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-MediumItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-SemiBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-SemiBoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Thin.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-ThinItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/icons/airplane.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/icons/baggage.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/icons/tick.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/map-background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/map.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/plane-big.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/plane.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/travelling.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/js/cities.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/js/listScripts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/vendor/animate/animate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/vendor/animsition/css/animsition.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/vendor/animsition/css/animsition.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/vendor/animsition/js/animsition.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/vendor/animsition/js/animsition.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/js/popper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/js/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/js/tooltip.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/vendor/countdowntime/countdowntime.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/vendor/css-hamburgers/hamburgers.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/vendor/css-hamburgers/hamburgers.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/vendor/daterangepicker/daterangepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/vendor/daterangepicker/daterangepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/vendor/daterangepicker/moment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/vendor/daterangepicker/moment.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/vendor/jquery/jquery-3.2.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/vendor/perfect-scrollbar/perfect-scrollbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/vendor/perfect-scrollbar/perfect-scrollbar.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/vendor/select2/select2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/vendor/select2/select2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/vendor/select2/select2.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/vendor/select2/select2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/details.mustache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/hello.mustache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/list.mustache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/registration.mustache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/userLists.mustache" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1SqJIhoolVEpVv8WvD48ssVTJw9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="TODO_SCOPE" value="All Places" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="D:/DISK_C/Desktop/HW01" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\IdeaProjects\coursework\src\main\resources\templates" />
+      <recent name="C:\Users\User\IdeaProjects\coursework\src\main\resources\static" />
+      <recent name="C:\Users\User\IdeaProjects\coursework\src\main\resources\static\images\icons" />
+      <recent name="C:\Users\User\IdeaProjects\coursework\src\main\resources\static\images" />
+      <recent name="C:\Users\User\IdeaProjects\coursework\src\main\resources\static\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\IdeaProjects\coursework\src\main\resources\static\images" />
+      <recent name="C:\Users\User\IdeaProjects\coursework\src\main\resources\static\css" />
+      <recent name="C:\Users\User\IdeaProjects\coursework\src\main\resources\static" />
+      <recent name="C:\Users\User\IdeaProjects\coursework\src\main\resources" />
+      <recent name="C:\Users\User\IdeaProjects\coursework\src\main\resources\templates" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="coursework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="app.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="coursework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="entities.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="app.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="coursework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="app.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="coursework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value=".*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="hello.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="coursework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="controllers.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.Application" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <option name="contentProportion" value="0.034995627" />
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",HTML5_OUTLINE_MODE" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="de778495-a95a-47bf-b241-f6e03432d5dd" name="Default Changelist" comment="" />
+      <created>1572285114126</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1572285114126</updated>
+      <workItem from="1572285118003" duration="855000" />
+      <workItem from="1572294678475" duration="4668000" />
+      <workItem from="1572329663965" duration="4694000" />
+      <workItem from="1572370343077" duration="2598000" />
+      <workItem from="1572539157198" duration="6845000" />
+      <workItem from="1572797882939" duration="1122000" />
+      <workItem from="1572801852558" duration="6816000" />
+      <workItem from="1572944693076" duration="2532000" />
+      <workItem from="1572954749604" duration="1494000" />
+      <workItem from="1572978466411" duration="7730000" />
+      <workItem from="1573303454521" duration="6921000" />
+      <workItem from="1573312107292" duration="4188000" />
+      <workItem from="1573316431723" duration="8747000" />
+      <workItem from="1573498304099" duration="308000" />
+      <workItem from="1573498716276" duration="2874000" />
+      <workItem from="1573556654828" duration="2514000" />
+      <workItem from="1573560411127" duration="475000" />
+      <workItem from="1573905115334" duration="15094000" />
+      <workItem from="1574633072535" duration="2030000" />
+      <workItem from="1574960335703" duration="8352000" />
+      <workItem from="1575470535703" duration="10993000" />
+      <workItem from="1575553827470" duration="2526000" />
+      <workItem from="1575556457648" duration="1153000" />
+      <workItem from="1575557721677" duration="3511000" />
+      <workItem from="1575580816282" duration="7096000" />
+      <workItem from="1575614361586" duration="10726000" />
+      <workItem from="1575662955875" duration="4762000" />
+      <workItem from="1575733973238" duration="20071000" />
+      <workItem from="1576072388199" duration="9117000" />
+      <workItem from="1576096495614" duration="7996000" />
+      <workItem from="1576160133899" duration="8126000" />
+      <workItem from="1576234507657" duration="9628000" />
+      <workItem from="1576255370134" duration="609000" />
+      <workItem from="1576259212227" duration="3322000" />
+      <workItem from="1576263341087" duration="2533000" />
+      <workItem from="1577262246076" duration="4988000" />
+      <workItem from="1577372659263" duration="10852000" />
+      <workItem from="1577535649841" duration="1847000" />
+      <workItem from="1577549348963" duration="3185000" />
+      <workItem from="1577557317411" duration="8265000" />
+      <workItem from="1577617347361" duration="780000" />
+      <workItem from="1577618750784" duration="246000" />
+      <workItem from="1577619777203" duration="6260000" />
+      <workItem from="1577632783734" duration="3555000" />
+      <workItem from="1577645881379" duration="2238000" />
+      <workItem from="1577651584445" duration="3230000" />
+      <workItem from="1577657377711" duration="12444000" />
+      <workItem from="1577985239793" duration="6058000" />
+      <workItem from="1577992623366" duration="1590000" />
+      <workItem from="1578059050515" duration="3975000" />
+      <workItem from="1578174200877" duration="7158000" />
+      <workItem from="1578493385429" duration="2934000" />
+      <workItem from="1578502866227" duration="804000" />
+      <workItem from="1578552063771" duration="1322000" />
+      <workItem from="1578555247494" duration="9346000" />
+      <workItem from="1578651956528" duration="368000" />
+      <workItem from="1578694254467" duration="1659000" />
+      <workItem from="1578742973217" duration="8000000" />
+      <workItem from="1578858950260" duration="4794000" />
+      <workItem from="1579039543025" duration="456000" />
+      <workItem from="1579097832137" duration="1285000" />
+      <workItem from="1579248806033" duration="26251000" />
+      <workItem from="1579276829607" duration="3422000" />
+      <workItem from="1579333556869" duration="10560000" />
+      <workItem from="1579530328408" duration="4311000" />
+      <workItem from="1579535314850" duration="11038000" />
+      <workItem from="1580153829745" duration="20825000" />
+      <workItem from="1580396949378" duration="2795000" />
+      <workItem from="1580496926035" duration="16952000" />
+      <workItem from="1580577270608" duration="4086000" />
+      <workItem from="1580630080149" duration="5977000" />
+      <workItem from="1580646732386" duration="9576000" />
+      <workItem from="1580736250895" duration="11416000" />
+      <workItem from="1580901974533" duration="13842000" />
+      <workItem from="1580919797144" duration="1298000" />
+      <workItem from="1580950524302" duration="4689000" />
+      <workItem from="1580955407434" duration="912000" />
+      <workItem from="1580956453489" duration="1350000" />
+      <workItem from="1580982424861" duration="7113000" />
+      <workItem from="1581262087520" duration="11090000" />
+      <workItem from="1581273681630" duration="3081000" />
+      <workItem from="1581327055828" duration="7116000" />
+      <workItem from="1581461426774" duration="19404000" />
+      <workItem from="1581600126914" duration="36736000" />
+      <workItem from="1582121512917" duration="1009000" />
+      <workItem from="1582724388611" duration="605000" />
+      <workItem from="1582725567031" duration="1038000" />
+      <workItem from="1582726740696" duration="151000" />
+      <workItem from="1582727055700" duration="3100000" />
+      <workItem from="1582989686313" duration="904000" />
+      <workItem from="1583060279214" duration="208000" />
+      <workItem from="1583060606551" duration="3210000" />
+      <workItem from="1584785085560" duration="2374000" />
+      <workItem from="1585660858977" duration="133000" />
+      <workItem from="1585664382180" duration="33000" />
+      <workItem from="1589311998388" duration="222000" />
+      <workItem from="1589312258971" duration="1911000" />
+      <workItem from="1589369419700" duration="12000" />
+      <workItem from="1592151215950" duration="13000" />
+      <workItem from="1597317311400" duration="1472000" />
+      <workItem from="1597318908660" duration="1467000" />
+      <workItem from="1597320506660" duration="917000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="137" y="38" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597319180167">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="137" y="38" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1597319180167" />
+    <state x="434" y="186" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597319315641">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="434" y="186" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1597319315641" />
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1597321443010">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1597321443010" />
+    <state width="1101" height="200" key="GridCell.Tab.0.bottom" timestamp="1597321443139">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1101" height="200" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1597321443139" />
+    <state width="1101" height="200" key="GridCell.Tab.0.center" timestamp="1597321443139">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1101" height="200" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1597321443139" />
+    <state width="1101" height="200" key="GridCell.Tab.0.left" timestamp="1597321443139">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1101" height="200" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1597321443139" />
+    <state width="1101" height="200" key="GridCell.Tab.0.right" timestamp="1597321443139">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1101" height="200" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1597321443139" />
+    <state width="1101" height="200" key="GridCell.Tab.1.bottom" timestamp="1597321443140">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1101" height="200" key="GridCell.Tab.1.bottom/0.0.1366.768@0.0.1366.768" timestamp="1597321443140" />
+    <state width="1101" height="200" key="GridCell.Tab.1.center" timestamp="1597321443140">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1101" height="200" key="GridCell.Tab.1.center/0.0.1366.768@0.0.1366.768" timestamp="1597321443140" />
+    <state width="1101" height="200" key="GridCell.Tab.1.left" timestamp="1597321443140">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1101" height="200" key="GridCell.Tab.1.left/0.0.1366.768@0.0.1366.768" timestamp="1597321443140" />
+    <state width="1101" height="200" key="GridCell.Tab.1.right" timestamp="1597321443140">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1101" height="200" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1597321443140" />
+    <state x="339" y="172" key="run.anything.popup" timestamp="1597319094333">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="339" y="172" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1597319094333" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/controllers/ListController.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/controllers/ListController.java</url>
+          <line>77</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/controllers/ListController.java</url>
+          <line>79</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/controllers/ListController.java</url>
+          <line>114</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/controllers/ListController.java</url>
+          <line>113</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/Application.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="str.value" />
+        <watch expression="str.value" language="JAVA" />
+        <watch expression="request" />
+        <watch expression="data.myArrayList.get(6)" />
+        <watch expression="tourismActivities" />
+        <watch expression="tourismActivities" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/coursework$Application.ic" NAME="Application Coverage Results" MODIFIED="1597319100938" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/coursework$Application__1_.ic" NAME="Application (1) Coverage Results" MODIFIED="1573314070844" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>app.*</FILTER>
+    </SUITE>
+  </component>
+</project>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/listStyle.css"/>
+    <link rel="stylesheet" href="css/util.css"/>
+    <script type="text/javascript" src="js/listScripts.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    {{#list}}
+        <a href="javascript:history.back()">Back</a>
+        {{#user}}
+            <form method="post"  action="/delList">
+                <input type="Submit" value="Delete list" class="input-top"/>
+            </form>
+        {{/user}}
+        <form method="post" >
+            <input type="Submit" value="Download this list in pdf" class="input-top" onclick="pdfOn()" onblur="pdfOff()"/>
+            <input type="checkbox" style="display: none" id="pdf" name="pdf">
+            {{#user}}
+            <input type="Submit" value="Save changes" class="input-top"/>
+            {{/user}}
+            <h1>{{name}}</h1>
+            <div>
+                <input id="newCategoryName"  type="text">
+                <input type="button" id="addCategoryButton" value="AddCategory" >
+            </div>
+            <div id="categories">
+            {{#categories}}
+             <div class="categoryName">
+            <input name="categoryName" value="{{categoryListName}}" style="display:none"/>
+             <label>{{categoryListName}}</label>
+            <input name="categories" value="{{categoryListId}}" style="display:none"/>
+             <input type="button" value="Edit" onclick="editName(this)">
+             </div>
+            <div id="{{categoryListId}}" class="m-t-4 m-b-4">
+                {{#items}}
+                   <div class="itemContainer m-b-3">
+                    <input name="items" value="{{id}}" style="display:none"/>
+                    <input type="checkbox" class="float-left" {{#checked}}checked{{/checked}} onchange="checkChange(this)"/>
+                     <input type="checkbox" name="checked" value="{{id}}" style="display:none" {{#checked}}checked{{/checked}}/>
+                      <input name="names" class="float-left w-271" value="{{name}}" style="display:none"/>
+                       <label class="float-left">{{name}} </label>
+                     <input name="amounts" class="amount" min="1" type="number" value="{{amount}}"/>
+                       <input type="button" value="Edit" onclick="editName(this)">
+                    <input type="button"  value="Delete" onclick="delItem(this)">
+                   </div>
+                {{/items}}
+                </div>
+                <input id="newItemName{{categoryListId}}" placeholder="New item`s name" class="newItemName" type="text">
+                <input id="amount{{categoryListId}}" class="amount" min="1" type="number" value="1"/>
+                <input value="{{categoryListId}}" style="display:none"/>
+                <input type="button" value="Add" onclick="addItem(this)">
+            {{/categories}}
+                </div>
+        </form>
+    {{/list}}
+</body>
+</html>

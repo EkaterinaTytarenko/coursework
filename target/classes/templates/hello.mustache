@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Hello</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="images/icons/airplane.ico"/>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <!--===============================================================================================-->
+</head>
+<body style="background-color: #666666;">
+
+<div class="limiter">
+    <div class="container-login100">
+        <div class="wrap-login100">
+            <form  method="post" class="register100-form">
+                {{#user}}
+                    <a href="/userLists?userId={{user.id}}" class="listsLink text-right fs-18">See your saved lists</a>
+                    <a href="/logout" class="listsLink text-right fs-18">Log out</a>
+                {{/user}}
+                {{^user}}
+                    <a href="/logout" class="listsLink text-right fs-18">Back to the main page</a>
+                {{/user}}
+                <span class="alert-form-title p-b-30">
+                    {{#message}}
+                        {{message}}
+                    {{/message}}
+                </span>
+                {{^message}}
+                <span class="login100-form-title p-b-28 text-center">
+						Hello!
+                </span>
+
+                <span class="login100-form-title p-b-30 text-center">
+						Choose the number of your trips, dates and destinations
+                </span>
+                {{/message}}
+                <span id="num" class="login100-form-title text-center" ></span>
+                <div class="slidecontainer ">
+                    <input type="range" min="1" max="5" value="1" class="slider" id="tripsRange" name="tripsNum" >
+                </div>
+
+                <div class="wrap-input wrap-input69">
+                    <input type="search" id="city1" class="form-control input100 fs-18" placeholder="Choose your destination" required/>
+                    <input type="search" id="city1-coordinates" name="city1_coordinates" style="display:none;"/>
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input wrap-input30" >
+                    <input class="input100 fs-16" type="text" name="daterange1" id="calendar1" required/>
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input wrap-input69">
+                    <input type="search" id="city2" class="form-control input100 fs-18" placeholder="Choose your destination" disabled/>
+                    <input type="search" id="city2-coordinates" name="city2_coordinates" style="display:none;"/>
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input wrap-input30">
+                    <input class="input100 fs-16" type="text" name="daterange2" id="calendar2" disabled/>
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input wrap-input69">
+                    <input type="search" id="city3"  class="form-control input100 fs-18" placeholder="Choose your destination" disabled/>
+                    <input type="search" id="city3-coordinates" name="city3_coordinates" style="display:none;"/>
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input wrap-input30">
+                    <input class="input100 fs-16" type="text" name="daterange3" id="calendar3" disabled/>
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input wrap-input69">
+                    <input type="search" id="city4"  class="form-control input100 fs-18" placeholder="Choose your destination" disabled/>
+                    <input type="search" id="city4-coordinates" name="city4_coordinates" style="display:none;"/>
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input wrap-input30">
+                    <input class="input100 fs-16" type="text" name="daterange4" id="calendar4" disabled/>
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input wrap-input69">
+                    <input type="search" id="city5" class="form-control input100 fs-18" placeholder="Choose your destination" disabled/>
+                    <input type="search" id="city5-coordinates" name="city5_coordinates" style="display:none;"/>
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input wrap-input30">
+                    <input class="input100 fs-16" type="text" name="daterange5" id="calendar5" disabled/>
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="container-login100-form-btn p-b-140">
+                    <input type="submit" value="Confirm" class="login100-form-btn" onclick="confirmChoose()"/>
+                </div>
+            </form>
+
+
+            <div class="map-pic" style="background-image: url('images/map.jpg');">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!--===============================================================================================-->
+<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+<script src="vendor/bootstrap/js/popper.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+<script src="vendor/daterangepicker/moment.min.js"></script>
+<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+<script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/places.js@1.17.1"></script>
+<script src="js/cities.js"></script>
+<script>
+    $(function() {
+        var today = new Date();
+        var dd = String(today.getDate()).padStart(2, '0');
+        var mm = String(today.getMonth() + 1).padStart(2, '0');
+        var yyyy = today.getFullYear();
+        today = mm + '/' + dd + '/' + yyyy;
+        $('input[type="text"]').daterangepicker({
+            opens: 'left',
+            minDate: today
+        }, function(start, end, label) {
+            console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+        });
+    });
+</script>
+<script>
+    var slider = document.getElementById("tripsRange");
+    var output = document.getElementById("num");
+    output.innerHTML = slider.value; // Display the default slider value
+
+    // Update the current slider value (each time you drag the slider handle)
+    slider.oninput = function() {
+        output.innerHTML = this.value;
+        var num=this.value;
+        var i;
+        for(i=2;i<=5;++i) {
+            document.getElementById("city" + i).disabled = 1;
+            document.getElementById("calendar" + i).disabled = 1;
+            document.getElementById("city" + i).required = 1;
+            document.getElementById("calendar" + i).required = 1;
+        }
+
+        for(i=2;i<=num;++i) {
+            document.getElementById("city"+i).disabled=0;
+            document.getElementById("calendar"+i).disabled=0;
+            document.getElementById("city" + i).required = 0;
+            document.getElementById("calendar" + i).required = 0;
+        }
+
+    }
+
+    function confirmChoose() {
+        var num=slider.value;
+        var message;
+        for (i = 1; i <= num; ++i) {
+            if (document.getElementById("city" + i + "-coordinates").value == "") {
+                alert("Something went wrong with your destinations." + "\n" + "Please,enter them again.");
+                for (i = 1; i <= 5; ++i) {
+                    document.getElementById("city" + i).value = null;
+                }
+                break;
+            }
+        }
+
+    }
+</script>
+
+</body>
+</html>

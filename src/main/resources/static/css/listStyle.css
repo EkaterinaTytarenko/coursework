@@ -1,0 +1,65 @@
+.itemContainer{
+    padding:2px 0px;
+}
+
+.categoryName{
+    padding-top:25px;
+}
+
+body{
+    font-family: Poppins-Regular;
+}
+
+input{
+    font-family: Poppins-Regular;
+}
+
+.categoryName label{
+    font-size:22px;
+    font-weight:bold;
+}
+
+.itemContainer{
+    width:455px;
+    text-align: right;
+}
+
+a{
+    display:block;
+    text-decoration:underline;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #505050;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+}
+
+a:hover{
+    color: #2d26c9;
+}
+
+.float-left{
+    float:left;
+}
+.amount{
+    width:35px;
+}
+
+.newItemName{
+    width:361px;
+}
+
+.input-top{
+    display:block;
+    font-size: 15px;
+    width:250px;
+    text-align: left;
+    margin-bottom: 4px;
+}
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('../fonts/poppins/Poppins-Regular.ttf');
+}

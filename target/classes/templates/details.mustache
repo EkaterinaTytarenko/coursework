@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Details</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<!--main-content-->
+<body>
+<h1>Details Form</h1>
+<!--form-stars-here-->
+<form method="post">
+<div class="main-w3-agile">
+    <div class="radio-header">
+    {{#multiple}}
+        <div class="form-botm-w3-agile">
+            <p><input name="separate" type="radio" value="true" checked>Create separate lists for every trip(recommended)</p>
+            <p><input name="separate" type="radio" value="false">Create one list for all your trips</p>
+        </div>
+    {{/multiple}}
+    <div class="form-botm-w3-agile">
+        <h2>Select your sex</h2>
+        <input name="sex" type="radio" value="male" checked><span>Male</span>
+        <input name="sex" type="radio" value="female" ><span>Female</span>
+    </div>
+    </div>
+{{#lists}}
+    <div class="form-header-agileinfo">
+        <h2>{{list.name}}</h2>
+        <div class="clear"></div>
+    </div>
+    <div class="main-sub-w3-agile">
+        <p class="header-botm-w3-agile">Please,take a minute and fill in your trip`s details</p>
+        <!--//form-header-->
+        <!--form-->
+            <div class="check-box-agileinfo">
+                <h2>Accomodation</h2>
+                <div class="agileits-row2">
+                    <input type="checkbox" id="Hotel{{index}}" name="Hotel{{index}}" type="checkbox">
+                    <label for="Hotel{{index}}"><span></span>Hotel</label>
+                </div>
+                <div class="agileits-row2">
+                    <input type="checkbox" id="Family_Friends{{index}}" name="Family_Friends{{index}}" type="checkbox">
+                    <label for="Family_Friends{{index}}"><span></span>Family/Friends</label>
+                </div>
+                <div class="agileits-row2">
+                    <input type="checkbox" id="Camping{{index}}" name="Camping{{index}}" type="checkbox">
+                    <label for="Camping{{index}}"><span></span>Camping</label>
+                </div>
+                <div class="agileits-row2">
+                    <input type="checkbox" id="Rent{{index}}" name="Rent{{index}}" type="checkbox">
+                    <label for="Rent{{index}}"><span></span>Rent</label>
+                </div>
+                <div class="agileits-row2">
+                    <input type="checkbox" id="Cruise{{index}}" name="Cruise{{index}}" type="checkbox">
+                    <label for="Cruise{{index}}"><span></span>Cruise</label>
+                </div>
+                <div class="agileits-row2">
+                    <input type="checkbox" id="Vacation_Home{{index}}" name="Vacation_Home{{index}}" type="checkbox">
+                    <label for="Vacation_Home{{index}}"><span></span>Vacation home</label>
+                </div>
+            </div>
+
+        <div class="check-box-agileinfo">
+            <h2>Transportation</h2>
+            <div class="agileits-row2">
+                <input type="checkbox" id="Bus{{index}}" name="Bus{{index}}" type="checkbox">
+                <label for="Bus{{index}}"><span></span>Bus</label>
+            </div>
+            <div class="agileits-row2">
+                <input type="checkbox" id="Plane{{index}}" name="Plane{{index}}" type="checkbox">
+                <label for="Plane{{index}}"><span></span>Plane</label>
+            </div>
+            <div class="agileits-row2">
+                <input type="checkbox" id="Car{{index}}" name="Car{{index}}" type="checkbox">
+                <label for="Car{{index}}"><span></span>Car</label>
+            </div>
+            <div class="agileits-row2">
+                <input type="checkbox" id="Train{{index}}" name="Train{{index}}" type="checkbox">
+                <label for="Train{{index}}"><span></span>Train</label>
+            </div>
+            <div class="agileits-row2">
+                <input type="checkbox" id="Ship{{index}}" name="Ship{{index}}" type="checkbox">
+                <label for="Ship{{index}}"><span></span>Ship</label>
+            </div>
+            <div class="agileits-row2">
+                <input type="checkbox" id="Motorcycle{{index}}" name="Motorcycle{{index}}" type="checkbox">
+                <label for="Motorcycle{{index}}"><span></span>Motorcycle</label>
+            </div>
+            <div class="agileits-row2">
+                <input type="checkbox" id="Bicycle{{index}}" name="Bicycle{{index}}" type="checkbox">
+                <label for="Bicycle{{index}}"><span></span>Bicycle</label>
+            </div>
+        </div>
+
+        <div class="check-box-agileinfo">
+            <h2>Sport</h2>
+            <div class="agileits-row2">
+                <input type="checkbox" id="Gym{{index}}" name="Gym{{index}}" type="checkbox">
+                <label for="Gym{{index}}"><span></span>Gym</label>
+            </div>
+            <div class="agileits-row2">
+                <input type="checkbox" id="Swimming{{index}}" name="Swimming{{index}}" type="checkbox">
+                <label for="Swimming{{index}}"><span></span>Swimming</label>
+            </div>
+            <div class="agileits-row2">
+                <input type="checkbox" id="Snow_Sports{{index}}" name="Snow_Sports{{index}}" type="checkbox">
+                <label for="Snow_Sports{{index}}"><span></span>Snow sports</label>
+            </div>
+            <div class="agileits-row2">
+                <input type="checkbox" id="Running{{index}}" name="Running{{index}}" type="checkbox">
+                <label for="Running{{index}}"><span></span>Running</label>
+            </div>
+            <div class="agileits-row2">
+                <input type="checkbox" id="Bicycling{{index}}" name="Bicycling{{index}}" type="checkbox">
+                <label for="Bicycling{{index}}"><span></span>Bicycling</label>
+            </div>
+            <div class="agileits-row2">
+                <input type="checkbox" id="Diving{{index}}" name="Diving{{index}}" type="checkbox">
+                <label for="Diving{{index}}"><span></span>Diving</label>
+            </div>
+            <div class="agileits-row2">
+                <input type="checkbox" id="Hiking{{index}}" name="Hiking{{index}}" type="checkbox">
+                <label for="Hiking{{index}}"><span></span>Hiking</label>
+            </div>
+            <div class="agileits-row2">
+                <input type="checkbox" id="Tennis{{index}}" name="Tennis{{index}}" type="checkbox">
+                <label for="Tennis{{index}}"><span></span>Tennis</label>
+            </div>
+            <div class="agileits-row2">
+                <input type="checkbox" id="Football{{index}}" name="Football{{index}}" type="checkbox">
+                <label for="Football{{index}}"><span></span>Football</label>
+            </div>
+            <div class="agileits-row2">
+                <input type="checkbox" id="Badminton{{index}}" name="Badminton{{index}}" type="checkbox">
+                <label for="Badminton{{index}}"><span></span>Badminton</label>
+            </div>
+            <div class="agileits-row2">
+                <input type="checkbox" id="Volleyball{{index}}" name="Volleyball{{index}}" type="checkbox">
+                <label for="Volleyball{{index}}"><span></span>Volleyball</label>
+            </div>
+            <div class="agileits-row2">
+                <input type="checkbox" id="Basketball{{index}}" name="Basketball{{index}}" type="checkbox">
+                <label for="Basketball{{index}}"><span></span>Basketball</label>
+            </div>
+            <div class="agileits-row2">
+                <input type="checkbox" id="Sport_Other{{index}}" name="Sport_Other{{index}}" type="checkbox">
+                <label for="Sport_Other{{index}}"><span></span>Other</label>
+            </div>
+        </div>
+
+        <div class="check-box-agileinfo">
+            <h2>Tourism activities</h2>
+            <div class="agileits-row2">
+                <input type="checkbox" id="Beach{{index}}" name="Beach{{index}}" type="checkbox">
+                <label for="Beach{{index}}"><span></span>Beach</label>
+            </div>
+            <div class="agileits-row2">
+                <input type="checkbox" id="Photograph{{index}}" name="Photograph{{index}}" type="checkbox">
+                <label for="Photograph{{index}}"><span></span>Photograph</label>
+            </div>
+            <div class="agileits-row2">
+                <input type="checkbox" id="Fancy_Dinner{{index}}" name="Fancy_Dinner{{index}}" type="checkbox">
+                <label for="Fancy_Dinner{{index}}"><span></span>Fancy dinner</label>
+            </div>
+            <div class="agileits-row2">
+                <input type="checkbox" id="Music_Festival{{index}}" name="Music_Festival{{index}}" type="checkbox">
+                <label for="Music_Festival{{index}}"><span></span>Music festival</label>
+            </div>
+        </div>
+
+        <div class="check-box-agileinfo">
+            <h2>Pet</h2>
+            <div class="agileits-row2">
+                <input type="checkbox" id="Cat{{index}}" name="Cat{{index}}" type="checkbox">
+                <label for="Cat{{index}}"><span></span>Cat</label>
+            </div>
+            <div class="agileits-row2">
+                <input type="checkbox" id="Dog{{index}}" name="Dog{{index}}" type="checkbox">
+                <label for="Dog{{index}}"><span></span>Dog</label>
+            </div>
+            <div class="agileits-row2">
+                <input type="checkbox" id="Rodent{{index}}" name="Rodent{{index}}" type="checkbox">
+                <label for="Rodent{{index}}"><span></span>Rodent</label>
+            </div>
+            <div class="agileits-row2">
+                <input type="checkbox" id="Pet_Other{{index}}" name="Pet_Other{{index}}" type="checkbox">
+                <label for="Pet_Other{{index}}"><span></span>Other</label>
+            </div>
+        </div>
+
+        <div class="check-box-agileinfo">
+            <h2>Other</h2>
+            <div class="agileits-row2">
+                <input type="checkbox" id="Business{{index}}" name="Business{{index}}" type="checkbox">
+                <label for="Business{{index}}"><span></span>Business</label>
+            </div>
+            <div class="agileits-row2">
+                <input type="checkbox" id="Baby{{index}}" name="Baby{{index}}" type="checkbox">
+                <label for="Baby{{index}}"><span></span>Baby</label>
+            </div>
+            <div class="agileits-row2">
+                <input type="checkbox" id="Laundry{{index}}" name="Laundry{{index}}" type="checkbox">
+                <label for="Laundry{{index}}"><span></span>Laundry</label>
+            </div>
+            <div class="agileits-row2">
+                <input type="checkbox" id="Medicine{{index}}" name="Medicine{{index}}" type="checkbox">
+                <label for="Medicine{{index}}"><span></span>Include medicine</label>
+            </div>
+            <div class="agileits-row2">
+                <input type="checkbox" id="Todo{{index}}" name="Todo{{index}}" type="checkbox">
+                <label for="Todo{{index}}"><span></span>Include to-do list</label>
+            </div>
+            <div class="agileits-row2">
+                <input type="checkbox" checked id="Repeat_basics{{index}}" name="Repeat_basics{{index}}" type="checkbox">
+                <label for="Repeat_basics{{index}}"><span></span>Repeat basics(recommended)</label>
+            </div>
+        </div>
+    </div>
+{{/lists}}
+            <div class="submit-button">
+                <input type="submit" value="Submit" />
+                <h6><a href="/hello">Click here to choose other dates or destinations</a></h6>
+                <div class="clear"></div>
+            </div>
+</div>
+        </form>
+</body>
+</html>
