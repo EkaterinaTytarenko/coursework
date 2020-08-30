@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="de778495-a95a-47bf-b241-f6e03432d5dd" name="Default Changelist" comment="deploying commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entities/TripsList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/TripsList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -318,7 +317,7 @@
       <workItem from="1597600091235" duration="31000" />
       <workItem from="1598603835530" duration="715000" />
       <workItem from="1598696899447" duration="1114000" />
-      <workItem from="1598699639574" duration="16003000" />
+      <workItem from="1598699639574" duration="16199000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1597321778121</created>
@@ -334,7 +333,21 @@
       <option name="project" value="LOCAL" />
       <updated>1598813185349</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="deploying commit">
+      <created>1598814288939</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1598814288939</updated>
+    </task>
+    <task id="LOCAL-00004" summary="deploying commit">
+      <created>1598814405800</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1598814405800</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -354,10 +367,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="434" y="186" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1598811679658" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1598814382651">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1598814532931">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1598814382651" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1598814532931" />
     <state x="129" y="58" key="DiffContextDialog" timestamp="1598814381649">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
