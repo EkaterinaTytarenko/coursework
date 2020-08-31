@@ -17,7 +17,6 @@ import org.apache.pdfbox.pdmodel.interactive.annotation.PDAppearanceEntry;
 import org.apache.pdfbox.pdmodel.interactive.annotation.PDAppearanceStream;
 import org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm;
 import org.apache.pdfbox.pdmodel.interactive.form.PDCheckBox;
-import org.apache.pdfbox.pdmodel.interactive.form.PDField;
 
 import java.io.File;
 import java.io.IOException;
@@ -34,7 +33,7 @@ public class PdfCreator {
         this.list = list;
         this.filePath = filePath;
         document=new PDDocument();
-        font=PDType0Font.load(document,new File("D:\\DISK_C\\Downloads\\dejavu-sans-font\\DejavuSansOblique-dvzg.ttf"));
+        font=PDType0Font.load(document,new File("src/main/resources/static/fonts/dejavu-sans-font/DejavuSansOblique-dvzg.ttf"));
     }
 
     public void createListPdf() throws IOException {
