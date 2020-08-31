@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="de778495-a95a-47bf-b241-f6e03432d5dd" name="Default Changelist" comment="deploying commit">
+    <list default="true" id="de778495-a95a-47bf-b241-f6e03432d5dd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/assets/PdfCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assets/PdfCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,22 +83,22 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\User\IdeaProjects\coursework\src\main\resources\templates" />
-      <recent name="C:\Users\User\IdeaProjects\coursework\src\main\resources\static" />
-      <recent name="C:\Users\User\IdeaProjects\coursework\src\main\resources\static\images\icons" />
-      <recent name="C:\Users\User\IdeaProjects\coursework\src\main\resources\static\images" />
-      <recent name="C:\Users\User\IdeaProjects\coursework\src\main\resources\static\css" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\User\IdeaProjects\coursework\src\main\resources\static\images" />
       <recent name="C:\Users\User\IdeaProjects\coursework\src\main\resources\static\css" />
       <recent name="C:\Users\User\IdeaProjects\coursework\src\main\resources\static" />
       <recent name="C:\Users\User\IdeaProjects\coursework\src\main\resources" />
       <recent name="C:\Users\User\IdeaProjects\coursework\src\main\resources\templates" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\IdeaProjects\coursework\src\main\resources\static\fonts" />
+      <recent name="C:\Users\User\IdeaProjects\coursework\src\main\resources\templates" />
+      <recent name="C:\Users\User\IdeaProjects\coursework\src\main\resources\static" />
+      <recent name="C:\Users\User\IdeaProjects\coursework\src\main\resources\static\images\icons" />
+      <recent name="C:\Users\User\IdeaProjects\coursework\src\main\resources\static\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -322,7 +319,7 @@
       <workItem from="1598696899447" duration="1114000" />
       <workItem from="1598699639574" duration="17029000" />
       <workItem from="1598815691448" duration="870000" />
-      <workItem from="1598816805153" duration="3617000" />
+      <workItem from="1598816805153" duration="4464000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1597321778121</created>
@@ -373,7 +370,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598867667798</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="bug fixes">
+      <created>1598875535124</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1598875535124</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -382,7 +386,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="deploying commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="deploying commit" />
+    <MESSAGE value="bug fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug fixes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="38" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598812715979">
@@ -393,10 +398,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="434" y="186" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1598811679658" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1598868046156">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1598875533406">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1598868046156" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1598875533406" />
     <state x="129" y="58" key="DiffContextDialog" timestamp="1598814381649">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
