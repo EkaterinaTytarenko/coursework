@@ -139,7 +139,7 @@ public class ListController {
 
     public String downloadPdf(HttpServletRequest request, HttpServletResponse response,Model model) throws IOException {
 
-        String EXTERNAL_FILE_PATH = "C:/applicationFiles/";
+        String EXTERNAL_FILE_PATH = "src/main/resources/generatedFiles/";
         String fileName=EXTERNAL_FILE_PATH + "list"+list.getListId()+".pdf";
 
         PdfCreator pdfCreator=new PdfCreator(list,fileName);

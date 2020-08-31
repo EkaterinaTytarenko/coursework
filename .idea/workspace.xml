@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="de778495-a95a-47bf-b241-f6e03432d5dd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/ListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/ListController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -319,7 +320,7 @@
       <workItem from="1598696899447" duration="1114000" />
       <workItem from="1598699639574" duration="17029000" />
       <workItem from="1598815691448" duration="870000" />
-      <workItem from="1598816805153" duration="4464000" />
+      <workItem from="1598816805153" duration="5259000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1597321778121</created>
@@ -377,7 +378,21 @@
       <option name="project" value="LOCAL" />
       <updated>1598875535124</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="bug fixes">
+      <created>1598876735621</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1598876735621</updated>
+    </task>
+    <task id="LOCAL-00010" summary="bug fixes">
+      <created>1598876748131</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1598876748131</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -398,10 +413,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="434" y="186" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1598811679658" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1598876733877">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1598876746553">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1598876733877" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1598876746553" />
     <state x="129" y="58" key="DiffContextDialog" timestamp="1598814381649">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -466,6 +481,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="339" y="172" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1597319094333" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1598877072081">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1598877072081" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
